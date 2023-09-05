@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .body{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+
+        .header{
+            background-color: #2d302ea6;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            color: rgb(235, 222, 206);
+            vertical-align: middle;
+            text-align: center;
+        }
+
+
+        .label{
+            margin-top: 20px;
+            font-size: xx-large;
+            transition: all 0.6s;
+        }
+
+        .label:hover{
+            font-size: 37px;
+        }
+
+        #emoji{
+            transition: all 0.7s;
+        }
+
+        #emoji:hover{
+            font-size: 43px;
+        }
+
+        #emoji2{
+            transition: all 0.6s;
+        }
+
+        #emoji2:hover{
+            font-size: 45px;
+        }
+
+        .secondlabel{
+            margin-top: 34px;
+            margin-left: 25.6px;
+            font-size: xx-large;
+            
+        }
+
+        .choose-label{
+            color: rgba(12, 12, 12, 0.781);
+            transition: all 0.6s;
+        }
+
+        .secondlabel:hover{
+            font-size: 36.7px;
+        }
+
+        
+        .kuromi-textandimg{
+            margin-left: 120px;
+        }
+
+        .kuromi-hyperlink{
+            font-size: 32px;
+            margin-left: -48px;
+            background-color: rgba(128, 0, 128, 0.356);
+            padding-right: 65px;
+            padding-left: 65px;
+            border: none;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .hellokitty-hyperlink{
+            font-size: 32px;
+            margin-left: 170px;
+            background-color: antiquewhite;
+            color: pink;
+            padding-right: 65px;
+            padding-left: 65px;
+            border: none;
+            border-radius: 20px;
+            
+        }
+
+        img{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.205);
+        }
+
+        .hellokitty-img{
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-top: 50px;
+            padding-bottom: 7px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <div class="header">
+    <label class="label">Video Player <span onclick ="changeEmoji()" id="emoji">📺</span></label>
+    </div>
+        <div class="secondlabel">
+            <label class ="choose-label" for="">Choose your Cartoon Show <span id="emoji2" onclick="changesecondEmoji()" >📽️</span>: <br>
+            <p><span style="font-size: 15px; margin-top: -80px;">*Click on the title*</span></p></label>
+        </div>
+        <div class="kuromi-textandimg">
+            <label class="kuromi-label"><a class ="kuromi-hyperlink" href="kuromicartoon.html">Kuromi’s Pretty Journey</a>
+                <a style="margin-left: 177px;" class="hellokitty-hyperlink" href="">
+                    <span>Hello Kitty</span></a>
+                    <a style="margin-left: 243.8px; font-size: 32px;
+                    background-color: #fff8e7; color: aquamarine;
+                    border: none; border-radius: 23px; padding-left: 65px; padding-right: 65px; text-decoration: underline;" class="cinnamoroll-hyperlink" href="">
+                        <span id="cinnamoroll-text">Cinnamoroll</span></a> <br>
+                <img style="width: 345px; border: none; border-radius: 23px; margin-left: 2px; background-color: black;" src="https://i.pinimg.com/originals/66/80/7d/66807d22dd1f009ad47073244cb4b472.gif" alt=""></label>
+                <img class="hellokitty-img" style="width: 340px; border-radius: 23px; background-color: pink; margin-left: 189px; margin-top: 40px;"
+                src="https://i.pinimg.com/originals/65/05/77/650577673fad701100d239c52fb6f044.gif">
+                <img class="cinnamoroll-img" style="background-color: aqua; margin-left: 162px; padding-top: 42px; border: none; border-radius: 23px; transition: all 0.6s;"
+                src="https://i.pinimg.com/originals/72/d9/bc/72d9bcc1e70741cd734e267fb96d3d19.gif"
+                alt="">
+        </div>
+    <script>
+        var currentEmoji = '📺';
+        var secondcurrentEmoji = '🎥'
+
+        function changeEmoji() {
+            const emojiElement = document.getElementById('emoji');
+
+            if (currentEmoji === "📺") {
+                emojiElement.textContent = secondcurrentEmoji;
+                currentEmoji = secondcurrentEmoji;
+            } else {
+                emojiElement.textContent = "📺";
+                currentEmoji = "📺";
+            }
+        }
+
+        var currentEmoji2 = '📽️'
+        var second_emoji = '🎞️'
+
+        function changesecondEmoji() {
+            const emoji = document.getElementById('emoji2');
+
+            if (currentEmoji2 === "📽️") {
+                emoji.textContent = second_emoji;
+                currentEmoji2 = second_emoji;
+            } else {
+                emoji.textContent = '📽️';
+                currentEmoji2 = '📽️';
+            }
+        }
+
+    </script>
+</body>
+</html>

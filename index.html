@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> qilli & riri 🌺</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="flower2positionstyle.css">
+
+    <style>
+
+        .flowerone{
+            font-size: 40px;
+            text-align: start;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .floweronepositionone{
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+
+        #floweronepositiononeone{
+            margin-left: 120px;
+        }
+
+        .floweronepositiontwo{
+            margin-left: 400px;
+        }
+
+        .floweronepositiontwotwo{
+            margin-left: 110px;
+        }
+
+        .floweronepositionthree{
+            margin-left: 300px;
+        }
+
+        .floweronepositionfour{
+            margin-left: 500px;
+        }
+
+        .heart-symbol{
+            transition: all 0.7s;
+        }
+
+        .heart-symbol:hover{
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <li class="abouther-text">
+                <button class="abouther-button"><a class="abouther-link" href="abouther.html">About Her🌷</a></button> <br>
+                <p class=""></p>
+            </li>
+
+            <li class="aboutus-text">
+                <button class ="aboutus-button"><a class="aboutus-link" href="aboutus.html">About Us 🌼</a></button>
+            </li>
+
+            <li class="photogallery-text">
+                <button class="photogallery-button"><a class="photogallery-link" href="photogallery.html">Photo Gallery 📸</a></button>
+            </li>
+
+            <li class="videoplayer-text">
+                <button class="videoplayer-button"><a class="videoplayer-link" href="videogallery.html">Video Player 📺</a></button>
+            </li>
+
+            <li class="flowerone-emoji">
+                <div class="flowerdiv">
+                    <button class="flowerone-button" onclick="displayFlowerone()">💐</button>
+                </div>
+            </li>
+
+             <li class="flowertwo-emoji">
+                <div class="flowerdivtwo"><button class="flowertwo-button" onclick="displayFlowertwo()">🌸</button>
+                </div>
+             </li>
+
+            <div class="flowerone">
+                <p class="floweronepositionone" id="floweronepositionone"><p id="floweronepositiononeone"></p>
+                <span id="flowertwopositionone"></span></p>
+                <p><span id="flowertwopositiontwo"></span></p>
+                <p class="floweronepositiontwo" id="floweronepositiontwo"></p>
+                <p><span id="flowertwopositionthree"></span></p>
+                <p class="floweronepositiontwotwo" id="floweronepositiontwotwo"></p>
+                <p class="floweronepositionthree" id="floweronepositionthree"></p>
+                <p class="floweronepositionfour" id="floweronepositionfour"></p>
+            </div>
+
+        </div>
+            <div class="icon">
+                <h2 class="title"><span class="ustext">qilli & riri<span onclick="changeSymbol()" class="heart-symbol">💘</span></span></h2>
+            </div>
+            <div class="Image">
+                <img class="image1"
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/371791353_268423969332207_8224592484100318700_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=I0lPJEuOw54AX8aVD5G&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRqKZ6cEjby_IyLAxnAASLOi9qqP1ltqmcXTcn8iEYbZQ&oe=651A4BBC">
+                <img class="image2"
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/371859083_680222050284160_2992192912764625098_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=btTuGfCYGmsAX8148mH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTiLHjLDZHq6CFtIVGEAIpc4cBf7htcVaGcEKlyAyuEVQ&oe=651A4EBD"
+                >
+                <img class="image3"
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/371894152_6568387186589348_8231389758183792874_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=QwY9gXq8T5MAX_7bSeS&_nc_oc=AQkbuQGhLmb0jUVWRSdQyGzuyOZXXksoh48cueoWj_M2joo5OzRtzkDPp0tpBbiKo0ABdEBkS_TFp6BwW7sDQvBd&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTotT372QmREJ8D91InZzUoMahkx4ZdP_7pGstgxSKtEA&oe=651A5AE1">
+            </div>
+        </div>
+    <script>
+
+        var currentSymbol = '💘'; // Declare the variable outside of the function
+
+        function changeSymbol() {
+
+            const changeSymbolElement = document.querySelector('.heart-symbol');
+
+            if (currentSymbol === '💘') {
+                changeSymbolElement.textContent = '💗';
+                currentSymbol = '💗';
+            } else {
+                changeSymbolElement.textContent = '💘';
+                currentSymbol = '💘';
+            }
+        }
+
+        function displayFlowerone() {
+
+            const flowerOneEmoji = '💐';
+
+            var flowerpositionone = document.getElementById("floweronepositionone");
+            flowerpositionone.innerHTML = flowerOneEmoji;
+
+            var flowerpositiononeone = document.getElementById("floweronepositiononeone");
+            flowerpositiononeone.innerHTML = flowerOneEmoji;
+
+            var flowerpositiontwo = document.getElementById("floweronepositiontwo");
+            flowerpositiontwo.innerHTML = flowerOneEmoji;
+
+            var flowerpositiontwotwo = document.getElementById('floweronepositiontwotwo');
+            flowerpositiontwotwo.innerHTML = flowerOneEmoji;
+
+            var flowerpositionthree = document.getElementById('floweronepositionthree');
+            flowerpositionthree.innerHTML = flowerOneEmoji;
+
+            var flowerpositionfour = document.getElementById('floweronepositionfour');
+            flowerpositionfour.innerHTML = flowerOneEmoji;
+        }
+
+        function displayFlowertwo() {
+            const flowerTwoEmoji = '🌸';
+
+            var flowertwopositionone = document.getElementById("flowertwopositionone");
+            flowertwopositionone.innerHTML = flowerTwoEmoji;
+
+            var flowertwopositiontwo = document.getElementById("flowertwopositiontwo");
+            flowertwopositiontwo.innerHTML = flowerTwoEmoji;
+
+            var flowertwopositionthree = document.getElementById('flowertwopositionthree');
+            flowertwopositionthree.innerHTML = flowerTwoEmoji;
+        }
+    </script>
+</body>
+</html>

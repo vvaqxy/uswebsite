@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seqil </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container">
+        <img id="image1" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/371794751_1671970279977066_1100816863718539198_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=vHOS6JaLAzgAX9jhHus&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS6CRyAzniuMtt5gM7lQXPQMO7hWo758NIxAcoulVBRsA&oe=65198070" alt="">
+        <h1 class="text">qilli & yiyi <span id="heartsymbol">&#10084;</span></h1>
+        <button class ="abouther-Button"onclick="console.log('You pressed the button!')">About Her🌷🐨
+            <span class ="Heart-symbol"></span></button>
+        <label for="" id="clickme-text">Click Me <span>&rarr;</span></label>
+    </div>
+</body> 
+</html>
+
+
+CHATGPT CODE: 

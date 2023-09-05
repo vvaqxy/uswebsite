@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seqil</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <li class="abouther-text">
+                <button href ="abouther.html" class="abouther-button" >About Her🌷</button></li>
+
+            <li class="aboutus-text">
+                <button href="aboutus.html" class ="aboutus-button" href="">About Us 🌼</button>
+            </li>
+
+            <li class="photogallery-text">
+                <button href="photogallery.html" class="photogallery-button">Photo Gallery 📸</button></li>
+        </div>
+            <div class="icon">
+                <h2 class="title"><span class="ustext">qilli & yiyi<span class="heart-symbol">&hearts;</span></span></h2>
+            </div>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

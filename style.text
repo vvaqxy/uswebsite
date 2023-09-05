@@ -1,0 +1,73 @@
+body{
+    background-image: url('background-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.ustext{
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 35px;
+    
+}
+
+.heart-symbol{
+    color: red;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.heart-symbol:hover{
+    transform: scale(1.5);
+}
+
+.heart-symbol:active{
+    opacity: 0.6;
+}
+
+.abouther-button,
+.photogallery-button,
+.aboutus-button {
+    background-color: rgb(125, 137, 146);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.abouther-text,
+.photogallery-text,
+.aboutus-text {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    
+}
+
+.abouther-text + .aboutus-text {
+    margin-left: 20px;
+}
+
+.abouther-button:hover, .aboutus-button:hover, .photogallery-button:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.abouther-button:active, .aboutus-button:active, .photogallery-button:active{
+    opacity: 0.87;
+}

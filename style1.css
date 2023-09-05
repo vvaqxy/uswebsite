@@ -1,0 +1,133 @@
+body::before {
+    content: "";
+    background-image: url('background-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    filter: blur(2.5px); /* Adjust the blur amount as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body{
+    background-image: url('background-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.ustext{
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 500px;
+    margin-left: 476px;
+
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.heart-symbol{
+    color: red;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+
+.abouther-button,.photogallery-button, .aboutus-button, .flowerone-button, .flowertwo-button, .videoplayer-button{
+    background-color: rgb(125, 137, 146);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.abouther-text, .photogallery-text, .aboutus-text, .flowerone-emoji, .flowertwo-emoji, .videoplayer-text{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    margin-top: 15px;
+}
+
+
+.abouther-text + .aboutus-text {
+    margin-left: 20px;
+}
+
+.abouther-button:hover, .aboutus-button:hover, .photogallery-button:hover, .videoplayer-button, .flowerone-button:hover{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    vertical-align: middle;
+}
+
+.videoplayer-button:hover{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+.abouther-button:active, .aboutus-button:active, .photogallery-button:active, .videoplayer-button:active{
+    opacity: 0.87;
+}
+
+.photogallery-link, .aboutus-link, .abouther-link, .videoplayer-link{
+    color: black;
+}
+
+
+
+
+img{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.Image{
+    margin-left: 40px;
+}
+
+.image1{
+    width: 403px;
+    position: relative;
+    margin-bottom: 70px;
+    margin-right: 100px;;
+    margin-top: 80px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.4);
+    
+}
+
+.image2{
+    width: 544.2px;
+    margin-bottom: 70px;
+    border-radius: 30px;
+    margin-right: 100px;
+}
+
+.image3{
+    width: 408.8px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 30px;
+}
+

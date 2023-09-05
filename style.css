@@ -1,0 +1,74 @@
+/*.text{
+    color: rgba(128, 0, 128, 0.596);
+}
+*/
+
+h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(242,191,191);
+}
+
+.text{
+    color: white;
+}
+
+#heartsymbol{
+    color: red;
+}
+
+.Heart-symbol{
+    
+}
+
+#clickme-text{
+    font-size: x-large;
+    color: aqua;
+    margin-bottom: 0px;
+    margin-top: 200px;
+    text-align: start;
+}
+
+.image-container {
+    text-align: start;/* Center its children horizontally */
+}
+
+#image1 {
+    border-radius: 23px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.about-Button {
+    font-weight: 800;
+    font-size: 23px;
+    border: none;
+    border-radius: 16px;
+   /*padding: 10px 25px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 96px;
+    color: white;
+    background-color: rgb(125, 137, 146);
+    cursor: pointer;
+    margin-top: 0px; /* Add space between image and button */
+    margin-bottom: 0px;
+    margin-left: 638px;
+    transition: all 0.15s;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.about-Button:hover{
+    background-color: rgb(106, 117, 126);
+}
+
+.about-Button:active{
+    opacity: 0.9;
+}
+
